@@ -40,11 +40,11 @@ export default function SignupPage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-emerald-200">
       <form onSubmit={handleSignup} className="bg-white p-8 rounded-lg shadow-md w-80">
-        <h2 className="text-2xl font-bold mb-4 text-center">Sign Up</h2>
+        <h2 className="text-2xl font-bold mb-4 text-center text-black">Sign Up</h2>
 
         <input
           type="text"
-          className="w-full p-2 mb-4 border rounded"
+          className="w-full p-2 mb-4 border rounded text-black"
           placeholder="Full Name"
           value={name}
           onChange={e => setName(e.target.value)}
@@ -53,7 +53,7 @@ export default function SignupPage() {
 
         <input
           type="email"
-          className="w-full p-2 mb-4 border rounded"
+          className="w-full p-2 mb-4 border rounded text-black"
           placeholder="Email"
           value={email}
           onChange={e => setEmail(e.target.value)}
@@ -62,7 +62,7 @@ export default function SignupPage() {
 
         <input
           type="password"
-          className="w-full p-2 mb-4 border rounded"
+          className="w-full p-2 mb-4 border rounded text-black"
           placeholder="Password"
           value={password}
           onChange={e => setPassword(e.target.value)}

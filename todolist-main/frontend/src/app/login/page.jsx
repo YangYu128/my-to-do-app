@@ -38,14 +38,14 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen bg-gray-100">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-red-600 to-green-400 p-4">
       <form onSubmit={handleLogin} className="flex flex-col bg-white p-6 rounded shadow-md w-80">
-        <h2 className="text-2xl mb-4 font-bold text-center">Login</h2>
+        <h2 className="text-2xl mb-4 font-solid text-center text-black">Login</h2>
 
         <input
           type="email"
           placeholder="Email"
-          className="mb-3 px-3 py-2 border rounded"
+          className="mb-3 px-3 py-2 border rounded text-black"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
@@ -54,7 +54,7 @@ export default function LoginPage() {
         <input
           type="password"
           placeholder="Password"
-          className="mb-3 px-3 py-2 border rounded"
+          className="mb-3 px-3 py-2 border rounded text-black"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required

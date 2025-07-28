@@ -25,11 +25,11 @@ export default function TodoPage() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-600 to-emerald-400 p-4">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-red-600 to-green-400 p-4">
       <div className="bg-white shadow-lg rounded-3xl p-6 md:p-8 lg:p-12 w-full max-w-2xl">
-        <h1 className="text-3xl font-bold text-center text-gray-900 mb-6">ToDo List</h1>
+        <h1 className="text-3xl font-bold text-center text-black mb-6">ToDo List</h1>
 
-        <div className="flex flex-wrap justify-center mb-4 gap-2">
+        <div className="flex flex-wrap justify-center mb-4 gap-2 text-black">
           {["all", "pending", "completed"].map(f => (
             <button
               key={f}
